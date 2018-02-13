@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>bamazon</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>root@127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClJpZNIeHy0uXxAPTlNN
+			dXRhYmxlU3RyaW5noy0vI1hOU1N0cmluZ9IeHzEyXk5TTXV0YWJs
+			ZUFycmF5ozEzI1dOU0FycmF50h4fIjWiIiNfEA9OU0tleWVkQXJj
+			aGl2ZXLRODlUZGF0YYABAAgAEQAaACMALQAyADcARQBLAFIAWgBl
+			AGwAcAByAHQAdgB6AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDFAMoA
+			1QDeAPQA+AEFAQ4BEwEVARcBGQEeASgBKgEtATIBRAFIAVEBVgFl
+			AWkBcQF2AXkBiwGOAZMAAAAAAAACAQAAAAAAAAA6AAAAAAAAAAAA
+			AAAAAAABlQ==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {811, 591}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>ROP DATABASE IF EXISTS bamazon_DB;
+CREATE DATABASE bamazon_DB;
+USE bamazon_DB;
+
+CREATE TABLE products (
+    item_id INT NOT NULL AUTO_INCREMENT,
+    product_name VARCHAR (100) NULL,
+    department_name VARCHAR (100) NULL,
+    price DECIMAL (10, 2) NULL,
+    stock_quantity INTEGER (10) NULL,
+    product_sales INTEGER (100) NULL,
+    PRIMARY KEY (item_id)
+);
+
+INSERT INTO products (product_name, department_name, price, stock_quantity)
+VALUES ("Gibson Les Paul,", "Musical Instruments", 900, 4),("Fender Telecaster", "Musical Instruments", 700, 6),("Martin Acoustic","Musical Instruments", 800, 4), ("Moog Synthesizer","Musical Instruments", 1300, 2), ("Fender Bassman,", "Musical Instruments", 600, 3),("Catnip Mouse","Pet Toys", 2, 25),("Cat Laser","Pet Toys", 4, 16)
+        ("Rawhide Bones", "Pet Toys", 7, 12), ("Hamster", "Pets", 14, 10), ("Turtle", "Pets",18, 5),
+CREATE TABLE departments (
+    department_id INT NOT NULL AUTO_INCREMENT,
+    department_name VARCHAR (100) NULL,
+    over_head_costs INTEGER (10) NULL,
+    PRIMARY KEY (department_id)
+);
+INSERT INTO departments (department_name,over_head_costs)
+VALUES ("Musical Instruments", 150),("Pet Toys", 3),
+</string>
+			<key>table</key>
+			<string>products</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>ROP DATABASE IF EXISTS bamazon_DB</string>
+		<string>CREATE TABLE favorite_food (
+  id INTEGER(11)  NOT NULL,
+  -- Makes a string column called "name" which cannot contain null --
+  food VARCHAR(50) NOT NULL,
+  -- Makes a boolean column called "has_pet" which cannot contain null --
+ 
+  score INTEGER(10)
+  )</string>
+		<string>CREATE TABLE favorite_food (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  -- Makes a string column called "name" which cannot contain null --
+  food VARCHAR(50) NOT NULL,
+  -- Makes a boolean column called "has_pet" which cannot contain null --
+ 
+  score INTEGER(10))</string>
+		<string>-- Drops the animals_db if it exists currently --
+DROP DATABASE IF EXISTS animals_db;
+-- Creates the "animals_db" database --
+CREATE DATABASE animals_db;
+-- Makes it so all of the following code will affect animals_db --
+USE animals_db;
+-- Creates the table "people" within animals_db --
+CREATE TABLE people (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  -- Makes a string column called "name" which cannot contain null --
+  name VARCHAR(30) NOT NULL,
+  -- Makes a boolean column called "has_pet" which cannot contain null --
+  has_pet BOOLEAN NOT NULL,
+  -- Makes a sting column called "pet_name" --
+  pet_name VARCHAR(30),
+  -- Makes an numeric column called "pet_age" --
+  pet_age INTEGER(10),
+  PRIMARY KEY (id)
+);
+-- Creates new rows containing data in all named columns --
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Ahmed", TRUE, "Rockington", 100);
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Ahmed", TRUE, "Rockington", 100);
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Jacob", TRUE, "Misty", 10);
+INSERT INTO people (name, has_pet)
+VALUES ("Peter", false);
+-- Updates the row where the column name is peter --
+UPDATE people
+SET has_pet = true, pet_name = "Franklin", pet_age = 2
+WHERE name = "Peter"</string>
+		<string>INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Ahmed", TRUE, "Rockington", 100)</string>
+		<string>-- Updates the row where the column name is peter --
+UPDATE people
+SET has_pet = true, pet_name = "Franklin", pet_age = 2
+WHERE name = "Peter"</string>
+		<string>CREATE DATABASE classmate_database</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.21</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
